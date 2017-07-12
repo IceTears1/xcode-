@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, ‘8.0’
+
+workspace ‘MyProject.xcworkspace’
+
+xcodeproj 'app1/app1.xcodeproj'
+xcodeproj 'app2/app2.xcodeproj'
+
+
+
+target:app1 do
+
+pod 'AFNetworking', '~> 2.1.0'
+pod 'SDWebImage', '~> 3.4'
+
+xcodeproj 'app1/app1.xcodeproj'
+end
+
+
+
+target:app2 do
+
+pod 'SDWebImage', '~> 3.4'
+xcodeproj 'app2/app2.xcodeproj'
+end
